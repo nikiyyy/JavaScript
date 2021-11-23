@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>Citizen LC-110N</title>
+		<link href="https://allfont.net/allfont.css?fonts=digital-7" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="styles.css">
+		<script src="Calculator.js"></script>
+	</head>
+	
+	<body>
+		<div id="outershell">
+			<div id="innershell">
+				
+				<div id="left">
+					<p>CITIZEN</p>
+				</div>
+				<div id="right">
+					<p id="model">LC-110N</p>
+					<hr>
+					<p>AUTO POWER OFF</p>
+				</div>
+				<div id="bottom">
+					<h2 id="output"></h2>
+				</div>	
+				
+				<div id="lower_part">
+				<p>ON</p>
+				<table>
+				  <tr>
+					<td><button id="on_off" type="button" onclick="deleteAll()">C/CE</button></td>
+					<td><button type="button" onclick="tirnOff()">OFF</button></td>
+					<td><button type="button" onclick="">√</button></td>
+					<td><button type="button" onclick="">%</button></td>
+				  </tr>
+				  <tr>
+					<td><button type="button" onclick="">MRC</button></td>
+					<td><button type="button" onclick="">M-</button></td>
+					<td><button type="button" onclick="">M+</button></td>
+					<td><button type="button" onclick="">÷</button></td>
+				  </tr>
+				  <tr>
+					<td><button type="button" onclick="appendToScreen(7)">7</button></td>
+					<td><button type="button" onclick="appendToScreen(8)">8</button></td>
+					<td><button type="button" onclick="appendToScreen(9)">9</button></td>
+					<td><button type="button" onclick="">X</button></td>
+				  </tr>
+				  <tr>
+					<td><button type="button" onclick="appendToScreen(4)">4</button></td>
+					<td><button type="button" onclick="appendToScreen(5)">5</button></td>
+					<td><button type="button" onclick="appendToScreen(6)">6</button></td>
+					<td><button type="button" onclick="subtractNumbers()">-</button></td>
+				  </tr>
+				  <tr>
+					<td><button type="button" onclick="appendToScreen(1)">1</button></td>
+					<td><button type="button" onclick="appendToScreen(2)">2</button></td>
+					<td><button type="button" onclick="appendToScreen(3)">3</button></td>
+					<td rowspan="2"><button id="plus" type="button" onclick="addNumbers()">+</button></td>
+				  </tr>
+				  <tr>
+					<td><button type="button" onclick="appendToScreen(0)">0</button></td>
+					<td><button type="button" onclick="appendToScreen(,)">.</button></td>
+					<td><button type="button" onclick="calculate()">=</button></td>
+				  </tr>
+				 </table>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
