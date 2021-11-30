@@ -30,7 +30,7 @@ function validate(){
 	}
 	
 	//repassword validation
-	if (document.getElementById("repass").value == document.getElementById("pass").value)
+	if (document.getElementById("repass").value == document.getElementById("pass").value && document.getElementById("pass").value.length > 6)
 	{
 		console.log("win4")
 	}

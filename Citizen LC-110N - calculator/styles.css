@@ -1,13 +1,13 @@
-@font-face {
-font-family: ‘digital’;
-src: url(‘digital-7.ttf’);
-}
-
 body{
 	color: white;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,64,121,1) 53%, rgba(0,212,255,1) 100%);
+
 }
 
 #outershell{
+	margin-left: auto;
+	margin-right: auto;
 	width:590px;
 	height:890px;
 	background-color: #0d0d0d;

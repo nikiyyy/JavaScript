@@ -77,6 +77,7 @@ function multiplyNumbers(){
 
 function squareroot(){
 	document.getElementById("output").innerHTML = Math.sqrt(document.getElementById("output").innerHTML)
+	document.getElementById("output").innerHTML = document.getElementById("output").innerHTML.slice(0,9);
 }
 
 function calculate(){
