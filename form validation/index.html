@@ -2,21 +2,29 @@
 	<head>
 		<title>form validation</title>
 		<script src="validation.js" ></script>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	
 	<body>
-		<form>
-			<input id="usernamename" type="text">
-			<p id="username_feedback"></p>
-			<input id="mail" type="email">
-			<p id="mail_feedback"></p>
-			<input id="pass" type="password">
-			<p id="pass_feedback"></p>
-			<input id="repass" type="password">
-			<p id="repass_feedback"></p>
-			<button type="button" onclick="validate()">Submit</button>
-			
-		</form>
-	
+		<div id="form">
+		<fieldset>
+			<legend>Login</legend> 
+			<form>
+				<label>Username:</label>
+				<input id="usernamename" type="text">
+				<p id="username_feedback"><br></p>
+				<label>E-mail:</label>
+				<input id="mail" type="email">
+				<p id="mail_feedback"><br></p>
+				<label>Password:</label>
+				<input id="pass" type="password">
+				<p id="pass_feedback"><br></p>
+				<label>Repeat password:</label>
+				<input id="repass" type="password">
+				<p id="repass_feedback"><br></p>
+				<button type="button" onclick="validate()">Submit</button>
+			</form>
+		</fieldset>
+		</div>
 	</body>
 </html>
