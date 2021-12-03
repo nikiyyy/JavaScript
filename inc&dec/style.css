@@ -24,7 +24,8 @@ body{
 }
 
 #main button{
-	margin-top:25px;
+	margin: 5px;
+	margin-top:20px;
 	width:80px;
 	background-color:rgba(34,193,195,1);
 	color:black;
