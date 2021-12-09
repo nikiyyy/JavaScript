@@ -1,0 +1,43 @@
+/*
+#ParentBox{
+
+    background-color:salmon;
+    height: 40%;
+    width: 70%;
+    text-align: center;
+}
+
+.box{
+    color: red;
+    background-color: royalblue;
+    display: inline-flex;
+}
+
+
+*/
+
+
+#ParentBox {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.box {
+    flex:0.1;
+    background-size: auto;
+    background-position: center;
+    height:600px;
+    margin: 10px;
+    border-radius: 30px;
+  }
+
+#box1{
+    background-image: url("./bgs/bg1.png");
+}
+#box2{
+    background-image: url("./bgs/bg2.png");
+}
+#box3{
+    background-image: url("./bgs/bg3.png");
+}
