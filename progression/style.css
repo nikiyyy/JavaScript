@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin:  0px;
+    text-align: center;
+
+}
+
+#progressionBox{
+   width: 400px;
+   height: 110px;
+   background-color: #262626;
+   display: inline-block;
+   margin-top: 400px;
+   padding-top:50px ;
+   border-radius: 10px;
+}
+
+li {
+    display: inline;
+    background-color: white;
+    padding: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid 3px rgb(109, 109, 109);
+    border-radius: 100px;
+}
+
+button{
+    margin-top: 30px;
+    width: 75px;
+    border-color: rgb(48, 128, 239);
+    border-radius: 7px;
+    color:rgb(48, 128, 239);
+}
+
+
+button.invalid {
+    border-color: rgb(109, 109, 109);
+    color:rgb(109, 109, 109);
+}
+
+li.active {
+    border-color: rgb(48, 128, 239);
+    color:rgb(48, 128, 239);
+}
