@@ -1,0 +1,18 @@
+*{
+	margin:0 px;
+	padding:0 px;
+}
+
+body{
+	text-align: center;
+	background: rgb(6,0,91);
+	background: linear-gradient(90deg, rgba(6,0,91,1) 0%, rgba(81,153,255,1) 52%, rgba(0,212,255,1) 100%);
+}
+
+#main{
+	margin-top:240px;
+}
+
+#search{
+	display:inline;
+}
