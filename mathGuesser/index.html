@@ -6,60 +6,75 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="ParentBox">
-            <button onclick="menu()">open</button>
-            <ul id="menu">
-                <li>
-                    <ul >
-                        <li>
-                            <input id="very-easy" type="radio" name="difficulty" value="very-easy">
-                            <label for="very-easy">Very Easy</label>
-                        </li>
-                        <li>
-                            <input id="easy" type="radio" name="difficulty" value="easy">
-                            <label for="easy">Easy</label>
-                        </li>
-                        <li>
-                            <input id="medium" type="radio" name="difficulty" value="medium">
-                            <label for="medium">Medium</label>
-                        </li>
-                        <li>
-                            <input id="hard" type="radio" name="difficulty" value="hard">
-                            <label for="hard">Hard</label>
-                        </li>
-                        <li>
-                            <input id="very-hard" type="radio" name="difficulty" value="very hard">
-                            <label for="very-har">Very Hard</label>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <input id="summation" type="checkbox" value="summation" >
-                            <label for="summation">Summation</label>
-                        </li>
-                        <li>
-                            <input id="subtraction" type="checkbox" value="subtraction" >
-                            <label for="subtraction">Subtraction</label>
-                        </li>
-                        <li>
-                            <input id="multiplication" type="checkbox" value="multiplication" >
-                            <label for="multiplication">Multiplication</label>
-                        </li>
-                        <li>
-                            <input id="division" type="checkbox" value="division" >
-                            <label for="division">Multiplication</label>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <p id='task'>r</p>
-            <input type="text">
-            <button onclick="">enter</button>
-            <p id='couter' class="ui">r</p>
-            <p id='wrong' class="ui" >r</p>
-            <p id='score' class="ui" >r</p>
+
+         <div id="ParentBox"> 
+            
+            <div id="options">
+                <ul id="menu">
+                    <li>
+                        <ul >
+                            <p>Difficulty</p>
+                            <li id="cl">
+                                <input id="very-easy" type="radio" name="difficulty" value="very-easy">
+                                <label for="very-easy">Very Easy</label>
+                            </li>
+                            <li>
+                                <input id="easy" type="radio" name="difficulty" value="easy">
+                                <label for="easy">Easy</label>
+                            </li>
+                            <li>
+                                <input id="medium" type="radio" name="difficulty" value="medium">
+                                <label for="medium">Medium</label>
+                            </li>
+                            <li>
+                                <input id="hard" type="radio" name="difficulty" value="hard">
+                                <label for="hard">Hard</label>
+                            </li>
+                            <li>
+                                <input id="very-hard" type="radio" name="difficulty" value="very hard">
+                                <label for="very-har">Very Hard</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Operations</p>
+                        <ul>
+                            <li>
+                                <input id="summation" type="checkbox" value="summation" >
+                                <label for="summation">Summation</label>
+                            </li>
+                            <li>
+                                <input id="subtraction" type="checkbox" value="subtraction" >
+                                <label for="subtraction">Subtraction</label>
+                            </li>
+                            <li>
+                                <input id="multiplication" type="checkbox" value="multiplication" >
+                                <label for="multiplication">Multiplication</label>
+                            </li>
+                            <li>
+                                <input id="division" type="checkbox" value="division" >
+                                <label for="division">Multiplication</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Time</p>
+                <input id="time" type="text">
+                <button id="settime">set time</button>
+            </div>
+            <button id="optionsbtn" onclick="menu()">Options</button>
+
+            <div id="game">
+                <p id='task'></p>
+                <button id=start>start</button>
+                <input id="inputtext" type="text">
+                <button id="answer">enter</button>
+                <p id='countdown' class="ui">60</p>
+                <label for="wrong">wrong:</label>
+                <p id='wrong' class="ui" >0</p>
+                <label for="score">right:</label>
+                <p id='score' class="ui" >0</p>
+            
         </div>
     </body>
     <script src="sheets.js"></script>
