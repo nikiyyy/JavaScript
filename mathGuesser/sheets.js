@@ -11,7 +11,6 @@ function menu()
 }
 
 function start(){
-
     setInterval(function countdown()
     {
         if(document.getElementById("countdown").innerHTML > 0)
@@ -23,15 +22,32 @@ function start(){
     ,1000);
     generateTask();
 }
+
 //functionality 
 function generateTask()
 {
-    let a = Math.ceil((Math.random(9))*9);
-    let b = Math.ceil((Math.random(9))*9);
-
+    if (document.getElementById('very-easy').checked){
+        var a = Math.ceil((Math.random(9))*9);
+        var b = Math.ceil((Math.random(9))*9);
+    }
+    else if(document.getElementById('easy').checked){
+        var a = Math.ceil((Math.random(99))*99);
+        var b = Math.ceil((Math.random(99))*99);
+    }
+    else if(document.getElementById('medium').checked){
+        var a = Math.ceil((Math.random(999))*999);
+        var b = Math.ceil((Math.random(999))*999);
+    }
+    else if(document.getElementById('hard').checked){
+        var a = Math.ceil((Math.random(9999))*9999);
+        var b = Math.ceil((Math.random(9999))*9999);
+    }
+    else if(document.getElementById('very-hard').checked){
+        var a = Math.ceil((Math.random(99999))*99999);
+        var b = Math.ceil((Math.random(99999))*99999);
+    }
     rightanswer = a+b;
     document.getElementById("task").innerHTML = a.toString() + "+" + b.toString();
-
 
 }
 
