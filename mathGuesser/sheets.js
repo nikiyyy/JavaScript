@@ -11,6 +11,14 @@ function menu()
 }
 
 function start(){
+    //initialisation
+    document.getElementById("score").innerHTML = "0";
+    document.getElementById("wrong").innerHTML = "0";
+    document.getElementById("countdown").innerHTML = document.getElementById("time").value ;
+    
+    for (var i = 1; i < 99999; i++)
+        window.clearInterval(i);
+
     setInterval(function countdown()
     {
         if(document.getElementById("countdown").innerHTML > 0)
@@ -46,8 +54,33 @@ function generateTask()
         var a = Math.ceil((Math.random(99999))*99999);
         var b = Math.ceil((Math.random(99999))*99999);
     }
-    rightanswer = a+b;
-    document.getElementById("task").innerHTML = a.toString() + "+" + b.toString();
+
+    while (true){
+        operation = Math.ceil((Math.random(4))*4);
+
+        if (operation == 1 && document.getElementById('summation').checked){
+            rightanswer = a+b;
+            document.getElementById("task").innerHTML = a.toString() + " + " + b.toString();
+            break;
+        }
+        else if(operation == 2 && document.getElementById('subtraction').checked){
+            rightanswer = a-b;
+            document.getElementById("task").innerHTML = a.toString() + " - " + b.toString();
+            break;
+        }
+        else if(operation == 3 && document.getElementById('multiplication').checked){
+            rightanswer = a*b;
+            document.getElementById("task").innerHTML = a.toString() + " * " + b.toString();
+            break;
+        }
+        else if(operation == 4 && document.getElementById('division').checked){
+            rightanswer = a/b;
+            document.getElementById("task").innerHTML = a.toString() + " / " + b.toString();
+            break;
+        }
+
+    
+    }
 
 }
 
