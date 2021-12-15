@@ -6,24 +6,26 @@
 
 body{
 	display: flex;
+	background-image: url("./src/bg.jpg");
+	background-repeat: no-repeat;
+	background-position-x: 0;
+	background-size: 110%;
+	background-position: center;
+	background-position-x: -80px;
+	transition: position 2s, height 4s;
 }
 
 .part{
-	background-color: gray;
 	flex-grow: 1;
 	height: 100vh;
 	background-repeat: no-repeat;
 }
 
 #left{
-	background-image: url("./src/alliance.png");
-	background-size: 100% ;
 	text-align: center;
 }
 
 #right{
-	background-image: url("./src/horde.png");
-	background-size: 100% ;
 	text-align: center;
 }
 
@@ -54,5 +56,5 @@ body{
 	font-size: 38px;
 	position: fixed;
 	left:43%;
-	top: 14%;
+	top: 5%;
 }
