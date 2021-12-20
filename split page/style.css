@@ -12,7 +12,6 @@ body{
 	background-size: 110%;
 	background-position: center;
 	background-position-x: -80px;
-	transition: position 2s, height 4s;
 }
 
 .part{
