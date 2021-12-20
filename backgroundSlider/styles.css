@@ -9,13 +9,20 @@ body{
     text-align: center;
 }
 
+#flexcontainer{
+    margin-top: 10vh;
+    display: flex;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
 #root{
     background-image: url("./bg/bg1.png");
     background-size:cover;
-    margin-top: 10vh;
     display: inline-block;
     width: 35%;
-    height: 40%;
+    height: 100%;
     border-radius: 30px;
 }
 button{
@@ -27,6 +34,7 @@ button{
 .circularbtn{
     margin: 5px;
     border-radius:  100px;
+
 }
 
 .active{
