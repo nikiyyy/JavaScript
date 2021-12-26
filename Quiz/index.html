@@ -7,8 +7,14 @@
         <link rel="icon" href="./bgs/logo.png">
     </head>
     <body id="flex-body">
+
+        <!-- add data -->
+        <div class="ParentBox" id="addData">
         <input type="file" id="file-selector" multiple>
-        <div id="ParentBox">
+        </div>
+
+        <!-- add quiz -->
+        <div class="ParentBox inactive" id="quizPart">
             <div id="question">
                 <p id=question-title>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi </p>
                 <input type="radio" id="Rinput" name="quiz" />
@@ -22,10 +28,21 @@
             </div>
             <div id="Parentbox-footer">
                 <button id="prev">Prev</button>
-                <p id="position">1/10</p>
+                <p id="CurPosition">1</p>
+                <p>/</p>
+                <p id="MaxPosition"></p>
                 <button id="next">Next</button>
-            </div>
+            </div>  
         </div>
+
+        <!-- show score -->
+        <div class="ParentBox inactive" id="showScore">
+            <p>your score is:</p>
+            <p id="score"></p>
+            <p>/</p>
+            <p id="maxscore"></p>
+        </div>
+        
     </body>
     <script src="quiz.js"></script>
 </html>

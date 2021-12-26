@@ -11,7 +11,7 @@
   justify-content: center;
 }
 
-#ParentBox{
+.ParentBox{
   margin-top: 20vh;
   background-color: rgb(55, 55, 55);
   width: 440px;
@@ -21,9 +21,27 @@
   flex-direction: column;
 }
 
+.inactive{
+  display:none;
+}
+
+#addData{
+  justify-content: center;
+}
+
+#showScore{
+  justify-content: center; 
+}
+#showScore p{
+  justify-content: center;
+  margin-left:40% ;
+}
+
+#file-selector{
+  margin-left:40% ;
+}
 #question{
 flex-flow: row;
-background-color: red;
 flex-grow: 1;
 }
 
