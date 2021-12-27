@@ -28,7 +28,9 @@
 #addData{
   justify-content: center;
 }
-
+#question{
+  padding: 20px;
+}
 #showScore{
   justify-content: center; 
 }

@@ -1,36 +1,36 @@
 {
-   "test1":[
-      	{"ans1":"1"},
-     	{"ans2":"0"},
-      	{"ans3":"0"},
-      	{"ans4":"0"}
+   "what is the capital of Bulgaria":[
+      	["Sofia","1"],
+     	["Paris","0"],
+      	["London","0"],
+      	["Rome","0"]
    ]
 ,
-   "test2":[
-	{"ans1":"1"},
-      	{"ans2":"0"},
-      	{"ans3":"0"},
-      	{"ans4":"0"}
+   "what is the capital of Greece":[
+      	["Athens","1"],
+     	["Washington","0"],
+      	["Maxico city","0"],
+      	["Santiago","0"]
    ]
 ,
-   "test3":[
-	{"ans1":"1"},
-     	 {"ans2":"0"},
-      	{"ans3":"0"},
-      	{"ans4":"0"}
+   "what is the capital of Romania":[
+      	["Bucharest","1"],
+     	["Rio de Janeiro","0"],
+      	["Tel-Aviv","0"],
+      	["Tokyo","0"]
    ]
 ,
-   "test4":[
-	{"ans1":"1"},
-      	{"ans2":"0"},
-      	{"ans3":"0"},
-      	{"ans4":"0"}
+   "what is the capital of Serbia":[
+      	["Istanbul","0"],
+     	["Moscow","0"],
+      	["Madrid","0"],
+		["Belgrade","1"]
    ]
 ,
-   "test5":[
-	{"ans1":"1"},
-      	{"ans2":"0"},
-      	{"ans3":"0"},
-      	{"ans4":"0"}
+   "what is the capital of Turkey":[
+      	["Ankara","1"],
+     	["Sofia","0"],
+      	["Athens","0"],
+      	["Bucharest","0"]
    ]
 }
