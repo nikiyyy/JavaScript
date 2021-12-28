@@ -1,5 +1,3 @@
-
-
 function nextQuestion(){
     //used to show the page
     let CurPosition= parseInt(document.getElementById("CurPosition").innerHTML);
@@ -44,22 +42,18 @@ function nextQuestion(){
     if(parseInt(document.getElementById("MaxPosition").innerHTML) == CurPosition){
         document.getElementById("next").innerHTML="Finish"
     }
+
     // checks if the answer is the right one
- 
     if (document.getElementById('Rinput').checked && Object.entries(data)[CurPosition-1][1][0][1] == 1){
-       // console.log(Object.entries(data)[CurPosition-1][1][0][0])
        score.push(1);
     }
     else if (document.getElementById('Rinput2').checked && Object.entries(data)[CurPosition-1][1][1][1] == 1){
-       // console.log(Object.entries(data)[CurPosition-1][1][1][0])
        score.push(1);
     }
     else if (document.getElementById('Rinput3').checked && Object.entries(data)[CurPosition-1][1][2][1] == 1){
-        //console.log(Object.entries(data)[CurPosition-1][1][2][0])
         score.push(1);
     }
     else if (document.getElementById('Rinput4').checked && Object.entries(data)[CurPosition-1][1][3][1] == 1){
-        //console.log(Object.entries(data)[CurPosition-1][1][3][0])
         score.push(1);
     }
     else{
@@ -88,22 +82,12 @@ function prevQuestion(){
     console.log(score)
     document.getElementById("CurPosition").innerHTML = CurPosition-1;
 
-    ///bld
+    ///backwards
     document.getElementById("question-title").innerHTML = Object.entries(data)[CurPosition-2][0]
     document.getElementById("RinputLabel").innerHTML = Object.entries(data)[CurPosition-2][1][0][0];
     document.getElementById("RinputLabel2").innerHTML = Object.entries(data)[CurPosition-2][1][1][0];
     document.getElementById("RinputLabel3").innerHTML = Object.entries(data)[CurPosition-2][1][2][0];
     document.getElementById("RinputLabel4").innerHTML = Object.entries(data)[CurPosition-2][1][3][0];
-
-    /*
-    if(CurPosition-1 == 1){
-        document.getElementById("question-title").innerHTML = Object.entries(data)[0][0]
-        document.getElementById("RinputLabel").innerHTML = Object.entries(data)[0][1][0][0];
-        document.getElementById("RinputLabel2").innerHTML = Object.entries(data)[0][1][1][0];
-        document.getElementById("RinputLabel3").innerHTML = Object.entries(data)[0][1][2][0];
-        document.getElementById("RinputLabel4").innerHTML = Object.entries(data)[0][1][3][0];
-    }
-    */
 }
 
 var score = []

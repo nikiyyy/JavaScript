@@ -28,6 +28,7 @@
 #addData{
   justify-content: center;
 }
+
 #question{
   padding: 20px;
 }
@@ -35,6 +36,7 @@
   justify-content: center; 
 }
 #showScore p{
+  display: inline-block;
   justify-content: center;
   margin-left:40% ;
 }
