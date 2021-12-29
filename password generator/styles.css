@@ -1,0 +1,28 @@
+*{
+    color: white;
+    margin: 0px;
+    
+}
+
+#flexbody{
+    margin: 0px;
+    background: rgb(182,255,123);
+    background: linear-gradient(90deg, rgba(182,255,123,1) 0%, rgba(32,77,118,0.9142223539806548) 48%, rgba(0,43,60,1) 99%);
+    display:flex;
+    justify-content: center;
+}
+#parentBox{
+    padding: 10px;
+    margin-top: 10%;
+    background-color: rgb(49, 49, 49);
+    width: 250;
+    height: 250;
+    text-align: center;
+    border-radius: 5px;
+}
+
+input{
+    margin: 5px;
+    display:inline-block ;
+    width: 100%;
+}
