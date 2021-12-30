@@ -1,40 +1,31 @@
 function test(){
     var string = "";
+
+    const LowerLettersElement = document.getElementById("LowerLetters");
+    const CapLettersElement = document.getElementById("CapLetters");
+    const NumbersElement = document.getElementById("Numbers");
+    const SymbolsElement = document.getElementById("Symbols");
+
     while(string.length < document.getElementById("PassLength").value){
+        if(!(LowerLettersElement.checked || CapLettersElement.checked || NumbersElement.checked || SymbolsElement.checked)){
+            break
+        }
         var randomNumb = Math.floor(Math.random() * 4)
-        if( randomNumb == "0" && document.getElementById("LowerLetters").checked){
+        if( randomNumb == "0" && LowerLettersElement.checked){
             string += String.fromCharCode(Math.floor(Math.random() * 26) + 97)
         }
-        else if( randomNumb == "1" && document.getElementById("CapLetters").checked){
+        else if( randomNumb == "1" && CapLettersElement.checked){
             string += String.fromCharCode(Math.floor(Math.random() * 26) + 65)
         }
-        else if(randomNumb == "2" && document.getElementById("Numbers").checked){
+        else if(randomNumb == "2" && NumbersElement.checked){
             string += String.fromCharCode(Math.floor(Math.random() * 10) + 46)
         }
-        else if(randomNumb == "3" && document.getElementById("Symbols").checked){
+        else if(randomNumb == "3" && SymbolsElement.checked){
             const symbols = "!@#$%^&*()_+{}/.,"
             string += symbols[Math.floor(Math.random() * symbols.length)]
         }
     }
-    console.log(string)
-    /*
-    //console.log((Math.random()).toString(36).slice(2, parseInt(document.getElementById("PassLength").value)+2));
-    console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 97));
-    console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 65));
-    console.log(String.fromCharCode(Math.floor(Math.random() * 10) + 46));
-    const symbols = "!@#$%^&*()_+{}/.,"
-    console.log(symbols[Math.floor(Math.random() * symbols.length)]);
-    */
-
-    if(document.getElementById("CapLetters").checked){
-        console.log("1")
-    }
-    if(document.getElementById("Symbols").checked){
-        console.log("2")
-    }
-    if(document.getElementById("Numbers").checked){
-        console.log("3")
-    }
+    document.getElementById("Output").value = string
 }
 
 document.getElementById("Generate").addEventListener("click", test)

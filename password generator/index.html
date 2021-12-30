@@ -7,12 +7,31 @@
     <body id="flexbody">
         <div id="parentBox">
             <p>Password Generator</p>
-            <input id="Output" type="text">
-            <input id="PassLength" type="number" value="10">password length</input>
-            <input id="LowerLetters" type="checkbox">Lower case letters</input>
-            <input id="CapLetters" type="checkbox">Capital letters</input>
-            <input id="Symbols" type="checkbox">Symbols</input>
-            <input id="Numbers" type="checkbox">Numbers</input>
+            <input class="IOfield" id="Output" type="text">
+            <p>Password length</p>
+            <input class="IOfield" id="PassLength" type="number" value="10"></input>
+
+            
+            <div class="Checkbox">
+                <p>Include lower case letters</p>
+                <input id="LowerLetters" type="checkbox"></input>
+            </div>
+
+            <div class="Checkbox">
+                <p>Include Capital letters</p>
+                <input id="CapLetters" type="checkbox"></input>
+            </div>
+
+            <div class="Checkbox">
+                <p>Include Symbols</p>
+                <input id="Symbols" type="checkbox"></input>
+            </div>
+
+            <div class="Checkbox">
+                <p>Include Numbers</p>
+                <input id="Numbers" type="checkbox"></input>
+            </div>
+
             <button id="Generate" >generate</button>
         </div>
         <script src="generator.js"></script>

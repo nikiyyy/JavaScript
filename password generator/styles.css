@@ -15,18 +15,28 @@
     padding: 10px;
     margin-top: 10%;
     background-color: rgb(49, 49, 49);
-    width: 250;
-    height: 250;
+    width: auto;
+    height: auto;
     text-align: center;
     border-radius: 5px;
 }
 
-input{
-    margin: 5px;
-    display:inline-block ;
-    width: 100%;
+
+.IOfield{
+width: 95%;
+margin:5px ;
 }
 
-#PassLength, #Output{
+.Checkbox{
+    display: table;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+}
+.Checkbox p, input{
+    display: inline;
+}
+
+#PassLength, #Output, #Generate{
     color: black;
 }
