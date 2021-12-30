@@ -25,7 +25,15 @@ function test(){
             string += symbols[Math.floor(Math.random() * symbols.length)]
         }
     }
-    document.getElementById("Output").value = string
+    if (string.length == 0)
+    {
+    document.getElementById("Output").value = "Select generation criteria"
+    }
+    else{
+        document.getElementById("Output").value = string
+    }
+
+    
 }
 
 document.getElementById("Generate").addEventListener("click", test)
